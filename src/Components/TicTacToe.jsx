@@ -53,7 +53,9 @@ export default function TicTacToe() {
   const [gameState, setgameState] = useState();
 
   const handleClicks = (index) => {
-  
+    if(gameState !== GameState.inProgress){
+      return;
+    }
 
     if (box[index] != null) {
       return;
@@ -82,11 +84,12 @@ export default function TicTacToe() {
     <div>
       <h1> Tic Tac Toe </h1>
       <h2> Current Player: {playerTurn}</h2>
-      <Reset gameState = {gameState} onReset = {handleReset}/>
+      <GameOver gameState={gameState} />
 
+      <Reset gameState = {gameState} onReset = {handleReset}/>
       <Board box={box} onBoxClick={handleClicks} strikeClass={strikeClass} />
     
-      <GameOver gameState={gameState} />
+      
     </div>
   );
 }
