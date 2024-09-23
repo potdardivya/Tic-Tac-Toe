@@ -50,7 +50,7 @@ export default function TicTacToe() {
   const [box, setBox] = useState(Array(9).fill(null));
   const [playerTurn, setPlayers] = useState(playerO);
   const [strikeClass, setStrike] = useState();
-  const [gameState, setgameState] = useState();
+  const [gameState, setgameState] = useState(GameState.inProgress);
 
   const handleClicks = (index) => {
     if(gameState !== GameState.inProgress){
