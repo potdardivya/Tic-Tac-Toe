@@ -2,8 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #23272f;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 h1,h2 {
@@ -20,13 +20,13 @@ h1,h2 {
 }
 
 .boxes {
-  color: currentColor;
+  color: white;
   font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
-  border: 0.1em solid ;
+  background-color: rgb(158, 156, 156);
+  border: 0.2em solid ;
   
 }
 
@@ -88,10 +88,13 @@ h1,h2 {
   font-size: 1.5em;
 }
 .reset-button {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #0074a6;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-color: black;
+  background-color: rgb(146, 146, 146);
   color: white;
-  width: 100%;
-  font-size: 1.5em;
+  width: 5em;
+  font-size: 1.2em;
 }
